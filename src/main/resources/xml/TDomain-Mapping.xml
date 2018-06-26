@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+  PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" 
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.dao.TDomainDao">
+
+	<resultMap id="getMap" type="com.test.model.TDomain">
+		<result column="OID" property="oid" jdbcType="NUMERIC"/>
+		<result column="DOMAIN_NAME" property="domainName" jdbcType="VARCHAR"/>
+		<result column="DOMAIN_DESC" property="domainDesc" jdbcType="VARCHAR"/>
+		<result column="DOMAIN_URL" property="domainUrl" jdbcType="VARCHAR"/>
+		<result column="TECH_DEPART" property="techDepart" jdbcType="VARCHAR"/>
+		<result column="TECH_PERSON" property="techPerson" jdbcType="VARCHAR"/>
+		<result column="PRO_PERSON" property="proPerson" jdbcType="VARCHAR"/>
+		<result column="PRO_DEPART" property="proDepart" jdbcType="VARCHAR"/>
+		<result column="TEST_IP" property="testIp" jdbcType="VARCHAR"/>
+		<result column="TEST_WEBPATH" property="testWebpath" jdbcType="VARCHAR"/>
+		<result column="IS_DEL" property="isDel" jdbcType="CHAR"/>
+		<result column="OUTIME" property="outime" jdbcType="TIMESTAMP"/>
+		<result column="OITIME" property="oitime" jdbcType="TIMESTAMP"/>
+		<result column="DOMAIN_INDEX" property="domainIndex" jdbcType="VARCHAR"/>
+		<result column="DOMAIN_NO" property="domainNo" jdbcType="VARCHAR"/>
+	</resultMap>
+
+
+</mapper>
